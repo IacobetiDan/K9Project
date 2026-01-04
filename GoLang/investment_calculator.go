@@ -41,9 +41,16 @@ func main() {
 	ebt := revenue - expenses
 	profit := ebt * (1 - taxRate/100)
 	ratio := ebt / profit
+	//comment format test with printf
+	// \n new line
+	//for ratio we load the format and the we dispaly
+	formatRatio := fmt.Sprintf("Ratio: %.1f\n", ratio)
 
-	fmt.Println(ebt)
-	fmt.Println(profit)
-	fmt.Println(ratio)
+	fmt.Printf("EBT: %v\n", ebt)
+	fmt.Printf("EBT: %.2f\n", ebt)
+	fmt.Println("Profit:", profit)
+	//print ratio
+	fmt.Print(formatRatio)
 
+	//for multiple line we us ` ` with this we can use multiple line.
 }
